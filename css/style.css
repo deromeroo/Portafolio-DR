@@ -3,13 +3,12 @@
     --fuentePrincial: 'Teko', sans-serif;
     --fuenteSecundaria: 'Noto Sans', sans-serif;
 
-    --colorPrincipal: rgb(7, 121, 150);
-    --colorSecundario: #98772b; 
-    --colorPrincipal-oscuro: rgb(3, 73, 90);
-    --colorHover: rgb(15, 207, 255);
+    --colorPrincipal: #579396;
+    --colorPrincipalTrans: #579396c2;
+    --colorSecundario: #6b5796;
+    --colorSecundarioTrans: #6b579675 ;
+    --colorHover: #ab87f8;
 }
-
-
 /*GLOBALES*/
 
 html {
@@ -44,6 +43,7 @@ h1, h2, h3 {
     text-transform: uppercase;
     margin: 0 !important;
     text-align: center;
+    color: #484277;
 }
 
 h2, h3{
@@ -88,7 +88,7 @@ li{
 }
 
 .redes-sociales a{
-    color: var(--colorPrincipal);
+    color: var(--colorSecundario);
     margin-right: 2rem;
     font-size: 4rem;
 }
@@ -103,20 +103,22 @@ li{
 }
 
 .logo img{
-    height: 15rem;
-    border: 7px solid var(--colorSecundario);
+    height: 14rem;
+    border: 3px solid var(--colorPrincipalTrans);
     border-radius: 50%;
-    background-color: #98772b69;
+    background-color: var(--colorSecundarioTrans);
 }
 
 .info-header h1{
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     margin-top: 5rem !important;
+    color: #fff;
 }
 
 .info-header p{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin: 3rem 0 5rem 0;
+    font-family: var(--fuentePrincial);
 }
 
 /*Navegacion*/
@@ -361,18 +363,17 @@ li{
 /*SECCION SKILLSET*/
 
 .skillset{
-    background-color: var(--colorSecundario);
+    background-color: var(--colorPrincipal);
 }
 
 .skillset h2 {
     margin-bottom: 4rem !important;
-    color: #fff;
-
 }
 
 .iconos{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    text-align: center;
 }
 
 @media (min-width: 720px) {
@@ -394,13 +395,12 @@ li{
 .iconos img{
     background-color: rgb(255, 255, 255);
     height: 12rem;
-    margin-left: 1rem;
     margin-bottom: 5rem;
     border-radius: 25%;
     
     box-shadow: 0px 0px 10px #000;
     transition: all .5s ease-in-out;
-    border: 5px solid var(--colorPrincipal);
+    border: 5px solid var(--colorSecundario);
     position: relative;
 }
 
@@ -419,25 +419,23 @@ li{
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: rgba(0, 0, 0, 0.425);
+    background-color: var(--colorSecundarioTrans);
     color: #fff;
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-
+    border: 2px solid var(--colorSecundario);
     position: absolute;
     z-index: 1;
-    bottom: 108%;
+    bottom: 104%;
     left: 50%;
-    margin-left: -55px;
-
-    font-family: var(--fuenteSecundaria);
+    margin-left: -60px;
+    font-size: 2.5rem;
+    font-family: var(--fuentePrincial);
 }
 
 @media (min-width: 768px) {
     .tooltip .tooltiptext {
-        
-        bottom: 110%;
         margin-left: -39px;
         
     }
@@ -446,12 +444,12 @@ li{
 .tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
-    top: 100%; 
+    top: 102%; 
     left: 50%;
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: rgba(0, 0, 0, 0.425) transparent transparent transparent;
+    border-color: var(--colorSecundario) transparent transparent transparent;
   }
 
 .tooltip:hover .tooltiptext {
@@ -467,41 +465,44 @@ li{
 .contacto p {
     color: #000;
     margin: 2rem 0;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincial);
+    font-size: 3rem;
+    color: var(--colorPrincipalTrans);
 }
 
-.contacto p i{
-    font-size: 2.5rem;
-    color: green;
-}
+
 
 .cv{
     text-align: center;
     margin: 1.5rem auto;
-    padding: 1rem;
-    background-color: var(--colorSecundario);
-    width: 35%;
+    padding: .5rem;
+    background-color: #6b5796a1;
+    width: 40%;
     border-radius: 2rem;
-    border: 1px solid var(--colorSecundario);
-    box-shadow: 0px 2px 10px #000;
+    border: 4px solid var(--colorSecundario);
+    box-shadow: 1px 1px 10px #000;
     transition: all .3s ease-out;
 }
 .cv a{
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.5rem;
+    color: rgb(12, 12, 12);
+    font-family: var(--fuentePrincial);
+    font-size: 2.5rem;
     
 }
 
 .cv i {
-    color: rgb(245, 247, 246);
-    margin: 0 2rem;
+    margin: 0 1rem;
+    font-size: 2rem;
 }
 
 .cv:hover{
-    background-color: #b18b34;
+    background-color: var(--colorHover);
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
+
+
 
 /*Footer*/
 .footer{
