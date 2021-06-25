@@ -422,7 +422,7 @@ li{
     background-color: var(--colorSecundarioTrans);
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    padding: 1px 0;
     border-radius: 6px;
     border: 2px solid var(--colorSecundario);
     position: absolute;
