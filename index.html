@@ -7,8 +7,8 @@
     <title>Diego Romero | Portafolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Teko&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet"  href="css/style.css">
+    <link rel="stylesheet"  href="css/normalize.css">
     <link rel="stylesheet" href="css/colorbox.css">
 </head>
 <body>
@@ -16,7 +16,7 @@
     <header class="header">
 
         <div class="cover-video">
-            <video autoplay loop muted >
+            <video autoplay loop muted preload="auto" poster="img/cover.png">
                 <source src="/video/video.mp4" type="video/mp4">
             </video>
         </div> <!--Cover-video -->
@@ -86,6 +86,7 @@
                                 alt="imagen del invitado"
                                 class="proyecto-info" 
                                 href="#proyecto1"
+                                loading="lazy"
                             >
 
                             <div>
@@ -109,7 +110,7 @@
                         <div style="display:none;">
                             <div class="proyecto-info" id="proyecto1">
                                 <h2>App Veterinaria</h2>
-                                <img src="img/proyectos/VeterinariaApp.png" alt="imagen del invitado">
+                                <img loading="lazy" src="img/proyectos/VeterinariaApp.png" alt="imagen del invitado">
                                 <p>Aplicación Web de Administracion de Pacientes de Veterinaria, elaborado usando HTML5, CSS3, JavaScript - IndexedDB. <br> <br>
                                 <span>Sistema de Notificación Empleado SweetAlert</span></p>
                             </div>
@@ -241,84 +242,84 @@
 
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/HTML-5-01.svg" alt="HTML-5">
+                                <img src="img/lagotipos/HTML-5-01.svg" alt="HTML-5" loading="lazy">
                                 <span class="tooltiptext">HTML5</span>
                             </div>
                         </div>
 
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/CSS-3-01.svg" alt="icono css3">
+                                <img src="img/lagotipos/CSS-3-01.svg" alt="icono css3" loading="lazy">
                                 <span class="tooltiptext">CSS3</span>
                             </div>
                         </div>
 
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/JavaScript-01.svg" alt="icono js">
+                                <img src="img/lagotipos/JavaScript-01.svg" alt="icono js" loading="lazy">
                                 <span class="tooltiptext">JavaScript</span>
                             </div>
                         </div>
 
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/React-01.svg" alt="icono reactjs">
+                                <img src="img/lagotipos/React-01.svg" alt="icono reactjs" loading="lazy">
                                 <span class="tooltiptext">REACT</span>
                             </div>
                         </div>
                         
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/JQuery-01.svg" alt="icono sass">
+                                <img src="img/lagotipos/JQuery-01.svg" alt="icono sass" loading="lazy">
                                 <span class="tooltiptext">JQuery</span>
                             </div>
                         </div>
                         
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/Sass-01.svg" alt="icono sass">
+                                <img src="img/lagotipos/Sass-01.svg" alt="icono sass" loading="lazy">
                                 <span class="tooltiptext">SASS</span>
                             </div>
                         </div>
 
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/Gulp-01.svg" alt="icono GULP">
+                                <img src="img/lagotipos/Gulp-01.svg" alt="icono GULP" loading="lazy">
                                 <span class="tooltiptext">GULP</span>
                             </div>
                         </div>
                         
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/PHP-01.svg" alt="icono php">
+                                <img src="img/lagotipos/PHP-01.svg" alt="icono php" loading="lazy">
                                 <span class="tooltiptext">PHP</span>
                             </div>
                         </div>
                         
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/Mongodb-03.svg" alt="icono mongo">
+                                <img src="img/lagotipos/Mongodb-03.svg" alt="icono mongo" loading="lazy">
                                 <span class="tooltiptext">MongoDB</span>
                             </div>
                         </div>              
 
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/Firebase-02.svg" alt="icono FirebaseDB">
+                                <img src="img/lagotipos/Firebase-02.svg" alt="icono FirebaseDB" loading="lazy">
                                 <span class="tooltiptext">Firebase</span>
                             </div>
                         </div>
 
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/MySQL-01.svg" alt="icono mysql">
+                                <img src="img/lagotipos/MySQL-01.svg" alt="icono mysql" loading="lazy">
                                 <span class="tooltiptext">MySQL</span>
                             </div>
                         </div>
 
                         <div>
                             <div class="tooltip">
-                                <img src="img/lagotipos/Node-JS-01.svg" alt="icono nodejs">
+                                <img src="img/lagotipos/Node-JS-01.svg" alt="icono nodejs" loading="lazy">
                                 <span class="tooltiptext">Node Js</span>
                             </div>
                         </div>
@@ -371,7 +372,7 @@
     </main>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/jquery.colorbox-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js" integrity="sha512-DAVSi/Ovew9ZRpBgHs6hJ+EMdj1fVKE+csL7mdf9v7tMbzM1i4c/jAvHE8AhcKYazlFl7M8guWuO3lDNzIA48A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/app.js"></script>
 
 </body>
