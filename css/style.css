@@ -480,11 +480,17 @@ li{
     margin: 1.5rem auto;
     padding: .5rem;
     background-color: #6b5796a1;
-    width: 40%;
+    width: 60%;
     border-radius: 2rem;
     border: 4px solid var(--colorSecundario);
     box-shadow: 1px 1px 10px #000;
     transition: all .3s ease-out;
+}
+
+@media (min-width: 768px) {
+   .cv{
+       width: 30%;
+   }
 }
 .cv a{
     color: rgb(12, 12, 12);
