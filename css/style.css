@@ -202,13 +202,6 @@ li{
     width: 3rem;
 }
 
-.activo{
-    border: 3px solid #fff;
-    padding: .1rem .5rem;
-    border-radius: 15px;
-    background-color:  rgba(0, 0, 0, 0.411);
-}
-
 /*SECCION PORTAFOLIO*/
 
 .fixed{
