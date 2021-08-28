@@ -34,7 +34,19 @@ function copyToClipboard() {
 
     navigator.clipboard.writeText(copiarTexto)
         .then(() => {
-        console.log("Text copied to clipboard...")
+
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 1500,
+                timerProgressBar: false,
+                background: '#cecece'
+              })
+              
+              Toast.fire({
+                text: 'Copiado al Portapapeles',
+              })
     })
         .catch(err => {
         console.log('Something went wrong', err);
