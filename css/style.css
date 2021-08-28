@@ -529,14 +529,14 @@ li{
 /**/
 
 .swal2-popup.swal2-toast .swal2-html-container{
-    font-size: 1.4rem !important;
+    font-size: 1.5rem !important;
     text-align: center;
     margin: 0 1rem !important;
     font-family: var(--fuentePrincial);
 }
 
 body.swal2-toast-shown .swal2-container.swal2-top-end, body.swal2-toast-shown .swal2-container.swal2-top-right{
-    width: 55% !important;
+    width: 50% !important;
 }
 
 
