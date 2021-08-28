@@ -74,7 +74,6 @@ li{
     background-image: url('../img/heading.jpg');
     background-size: cover;
     background-position: center center;
-    background-attachment: inherit;    
     background-repeat: no-repeat;
 }
 
