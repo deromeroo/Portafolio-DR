@@ -529,7 +529,7 @@ li{
 /**/
 
 .swal2-popup.swal2-toast .swal2-html-container{
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
     text-align: center;
     margin: 0 1rem !important;
     font-family: var(--fuentePrincial);
