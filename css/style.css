@@ -173,29 +173,25 @@ li{
 }
 
 .mostrar{
-    max-height: 14rem;
+    max-height: 12rem;
     border-bottom-right-radius: 2rem;
     border-bottom-left-radius: 2rem;
 }
 
 .barra a{
-    margin-top: 1.4rem;
+    margin-top: 1rem;
     color: #fff;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     transition: all 0.7s ease;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincial);
 }
 .barra a:last-child{
-    margin-bottom: 3.5rem;
+    margin-bottom: 1rem;
 }
 
 .barra a:hover{
-    border-radius: 10px;
-    background-color: #fff;
-    color: black;
-    width: 25%;
-    text-align: center;
-    padding: .2rem 0;
-    transition: all 0.7s ease;
+    color: rgb(160, 160, 160);
 }
 
 .mobile-menu:hover{
@@ -219,14 +215,20 @@ li{
 @media (min-width: 768px) {
     
     .lista-proyectos{
-        margin: 0 15rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .contenedor {
+        max-width: none;
     }
 }
 
 .proyectos{
     position: relative;
     overflow: hidden;
-    margin: 4rem auto;
+    margin: 2rem auto;
     border-radius: 1rem;
     background-color: var(--colorSecundario);
     border: 3px solid var(--colorSecundario);
