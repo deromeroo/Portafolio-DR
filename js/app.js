@@ -7,12 +7,14 @@ document.addEventListener('DOMContentLoaded', () => {
 const menuBurger = document.querySelector('#burger');
 const proyecto = document.querySelector('.proyecto-info');
 const barra = document.querySelector('#barra');
+const copiar = document.querySelector('#copy');
 
 ///Funciones
 
 function eventListener() {
     menuBurger.addEventListener('click', mostrarMenu);
-    barra.addEventListener('click', mostrarMenu)
+    barra.addEventListener('click', mostrarMenu);
+    copiar.addEventListener('click', copyToClipboard);
 }
 
 function mostrarMenu() {
@@ -27,7 +29,19 @@ function mostrarMenu() {
 
 };
 
+function copyToClipboard() {
+    const copiarTexto = document.querySelector('#copyText').innerHTML;
 
+    navigator.clipboard.writeText(copiarTexto)
+        .then(() => {
+        console.log("Text copied to clipboard...")
+    })
+        .catch(err => {
+        console.log('Something went wrong', err);
+    })
+    
+    
+}
 
 
 //JQUERY
