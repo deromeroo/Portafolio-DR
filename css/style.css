@@ -393,7 +393,7 @@ li{
 
 .iconos img{
     background-color: rgb(255, 255, 255);
-    height: 15rem;
+    height: 12rem;
     margin-bottom: 6rem;
     border-radius: 25%;
     
@@ -402,6 +402,13 @@ li{
     border: 5px solid var(--colorSecundario);
     position: relative;
 }
+
+@media (min-width: 720px) {
+   .iconos img {
+       height: 15rem;
+   }
+}
+
 
 .iconos img:hover {
     cursor: pointer;
