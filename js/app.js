@@ -61,6 +61,7 @@ $(function() {
 
     /*MENU FIJO*/
     const windowHeight = $(window).height();
+    const windowWidth = $(window.innerWidth)
     const barraAltura = $('.navegacion').innerHeight();
 
     $(window).scroll(function() {
@@ -79,9 +80,20 @@ $(function() {
 
     //*ColorBox */
 
-    $('.proyecto-info').colorbox({
-        inline:true, 
-        width:'75%',
-    })
+    if(windowWidth[0] < 1200) {
+
+        $('.proyecto-info').colorbox({
+            inline:true, 
+            width:'98%',
+        })
+    }else{
+        $('.proyecto-info').colorbox({
+            inline:true, 
+            width:'65%',
+        })
+
+    }
+    
+
     
 });
