@@ -405,7 +405,7 @@ li{
 
 .iconos img:hover {
     border-radius: 0;
-    
+
 }
 
 /*TOOLTIP*/
@@ -548,7 +548,7 @@ body.swal2-toast-shown .swal2-container.swal2-top-end, body.swal2-toast-shown .s
     }
     
     body.swal2-toast-shown .swal2-container.swal2-top-end, body.swal2-toast-shown .swal2-container.swal2-top-right{
-        width: 18% !important;
+        width: 12% !important;
     }
     
 }
