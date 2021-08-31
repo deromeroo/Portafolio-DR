@@ -5,19 +5,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Variables
 const menuBurger = document.querySelector('#burger');
-const proyecto = document.querySelector('.proyecto-info');
+const proyect = document.querySelector('.proyecto-info');
 const barra = document.querySelector('#barra');
 const copiar = document.querySelector('#copy');
+const date = document.querySelector('#date');
 
-///Funciones
+///Functions
 
 function eventListener() {
-    menuBurger.addEventListener('click', mostrarMenu);
-    barra.addEventListener('click', mostrarMenu);
+    menuBurger.addEventListener('click', showMenu);
+    barra.addEventListener('click', showMenu);
     copiar.addEventListener('click', copyToClipboard);
 }
 
-function mostrarMenu() {
+function showMenu() {
 
     if(barra.classList.contains('mostrar')){
         barra.classList.remove('mostrar')
@@ -30,9 +31,9 @@ function mostrarMenu() {
 };
 
 function copyToClipboard() {
-    const copiarTexto = document.querySelector('#copyText').innerHTML;
+    const copyText = document.querySelector('#copyText').innerHTML;
 
-    navigator.clipboard.writeText(copiarTexto)
+    navigator.clipboard.writeText(copyText)
         .then(() => {
 
             const Toast = Swal.mixin({
@@ -45,15 +46,16 @@ function copyToClipboard() {
               })
               
               Toast.fire({
-                text: 'Copiado al Portapapeles',
+                text: 'Copied to Clipboard',
               })
     })
         .catch(err => {
         console.log('Something went wrong', err);
     })
-    
-    
 }
+
+    const actualDate = new Date;
+    date.innerHTML = actualDate.getFullYear();
 
 
 //JQUERY
@@ -62,16 +64,16 @@ $(function() {
     /*MENU FIJO*/
     const windowHeight = $(window).height();
     const windowWidth = $(window.innerWidth)
-    const barraAltura = $('.navegacion').innerHeight();
+    const barraAltura = $('.navigation').innerHeight();
 
     $(window).scroll(function() {
         const scroll = $(window).scrollTop();
 
             if(scroll > windowHeight) {
-                $('.navegacion').addClass('fixed');
+                $('.navigation').addClass('fixed');
                 $('body').css({'margin-top': barraAltura +'px'});
             }else{
-                $('.navegacion').removeClass('fixed');
+                $('.navigation').removeClass('fixed');
                 $('body').css({'margin-top':'0px'});
 
             }
@@ -89,7 +91,7 @@ $(function() {
     }else{
         $('.proyecto-info').colorbox({
             inline:true, 
-            width:'65%',
+            width:'60%',
         })
 
     }
