@@ -13,22 +13,8 @@ const date = document.querySelector('#date');
 ///Functions
 
 function eventListener() {
-    menuBurger.addEventListener('click', showMenu);
-    barra.addEventListener('click', showMenu);
     copiar.addEventListener('click', copyToClipboard);
 }
-
-function showMenu() {
-
-    if(barra.classList.contains('mostrar')){
-        barra.classList.remove('mostrar')
-        menuBurger.classList.remove('activo');
-    }else{
-        barra.classList.toggle('mostrar');
-        menuBurger.classList.toggle('activo');
-    }
-
-};
 
 function copyToClipboard() {
     const copyText = document.querySelector('#copyText').innerHTML;
